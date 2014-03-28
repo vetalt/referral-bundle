@@ -9,5 +9,10 @@
     ],
     "require": {
         "friendsofsymfony/user-bundle": "~2.0@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Vetalt\\ReferralBundle": ""
+        }
     }
 }
