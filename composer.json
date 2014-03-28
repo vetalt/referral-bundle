@@ -1,4 +1,5 @@
 {
+    "name": "vetalt/referral-bundle",
     "type": "symfony-bundle",
     "authors": [
         {
