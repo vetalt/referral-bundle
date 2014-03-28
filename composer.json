@@ -12,7 +12,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Vetalt\\ReferralBundle\\": ""
+            "Vetalt\\ReferralBundle": ""
         }
-    }
+    },
+    "target-dir": "Vetalt/ReferralBundle"
 }
