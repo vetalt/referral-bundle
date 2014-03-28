@@ -1,0 +1,12 @@
+{
+    "type": "symfony-bundle",
+    "authors": [
+        {
+            "name": "vitaly tarasov",
+            "email": "vitaly.tarasov@gmail.com"
+        }
+    ],
+    "require": {
+        "friendsofsymfony/user-bundle": "~2.0@dev"
+    }
+}
