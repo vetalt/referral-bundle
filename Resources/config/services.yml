@@ -1,0 +1,16 @@
+services:
+    vetalt_referral.registration.form.type:
+        class: Vetalt\ReferralBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: vetalt_referral_registration }
+    vetalt_referral.request_listener:
+        class: Vetalt\ReferralBundle\EventListener\RequestListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest }
+        arguments: [ @router, @doctrine.orm.entity_manager, @service_container ]
+    vetalt_referral.user_register_listener:
+        class: Vetalt\ReferralBundle\EventListener\UserRegisterListener
+        tags:
+            - { name: kernel.event_subscriber }
+        arguments: [ @service_container ]
