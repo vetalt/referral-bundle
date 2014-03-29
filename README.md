@@ -10,10 +10,15 @@ install
 2) install the bundle using composer:
 ```js
 {
-    "require": {
-        "friendsofsymfony/user-bundle": "~2.0@dev"
+"require": {
+    "vetalt/referral-bundle": "dev-master"
+},
+"repositories": [
+    {
+        "type": "git",
+        "url": "https://github.com/vetalt/referral-bundle"
     }
-}
+],
 ```
 
 3) enable the bundle in the kernel:
