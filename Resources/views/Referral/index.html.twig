@@ -1,0 +1,28 @@
+{% extends 'VetaltReferralBundle::layout.html.twig' %}
+
+{% block title %}Referral{% endblock %}
+
+{% block body %}
+
+    <table cellspacing="0" cellpadding="0" class="striped sortable">
+        <thead>
+            <tr>
+                <th>Referral Code</th>
+                <th>IP address</th>
+                <th>Referrer URL</th>
+                <th>Date Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in list %}
+                <tr>
+                    <td>{{ item.getRefcode }}</td>
+                    <td>{{ item.getIp }}</td>
+                    <td>{{ item.getReferer }}</td>
+                    <td>{{ item.getDateTime.format('Y-m-d H:i:s') }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

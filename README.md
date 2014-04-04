@@ -52,3 +52,10 @@ fos_user:
 ``` bash
 $ php app/console doctrine:schema:update --force
 ```
+
+6) import routing file
+``` yaml
+# app/config/routing.yml
+_vetalt_referral:
+    resource: "@VetaltReferralBundle/Resources/config/routing.yml"
+```

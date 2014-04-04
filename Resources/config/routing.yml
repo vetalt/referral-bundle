@@ -1,0 +1,3 @@
+_referral:
+    pattern:  /referral/
+    defaults: { _controller: VetaltReferralBundle:Referral:index }
