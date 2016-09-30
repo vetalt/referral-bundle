@@ -1,10 +1,10 @@
 <?php
 
-namespace Vetalt\ReferralBundle;
+namespace Transmitter\ReferralBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class VetaltReferralBundle extends Bundle {
+class TransmitterReferralBundle extends Bundle {
 
     public function getParent() {
         return 'FOSUserBundle';

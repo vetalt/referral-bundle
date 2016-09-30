@@ -1,6 +1,6 @@
 <?php
 
-namespace Vetalt\ReferralBundle\DependencyInjection;
+namespace Transmitter\ReferralBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
@@ -10,7 +10,7 @@ class Configuration implements ConfigurationInterface {
 
     public function getConfigTreeBuilder() {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('vetalt_referral');
+        $rootNode = $treeBuilder->root('transmitter_referral');
         
         $rootNode
                 ->children()

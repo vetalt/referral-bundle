@@ -1,6 +1,6 @@
 <?php
 
-namespace Vetalt\ReferralBundle\Entity;
+namespace Transmitter\ReferralBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

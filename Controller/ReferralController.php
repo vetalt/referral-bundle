@@ -1,6 +1,6 @@
 <?php
 
-namespace Vetalt\ReferralBundle\Controller;
+namespace Transmitter\ReferralBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -8,11 +8,11 @@ class ReferralController extends Controller {
 
     public function indexAction() {
         $references = $this->getDoctrine()
-                ->getRepository('VetaltReferralBundle:Reference')
+                ->getRepository('TransmitterReferralBundle:Reference')
                 ->findAll();
         
         return $this->render(
-                'VetaltReferralBundle:Referral:index.html.twig',
+                'TransmitterReferralBundle:Referral:index.html.twig',
                 ['list' => $references]);
     }
 

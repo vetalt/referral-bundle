@@ -1,5 +1,5 @@
 {
-    "name": "vetalt/referral-bundle",
+    "name": "transmitter/referral-bundle",
     "type": "symfony-bundle",
     "authors": [
         {
@@ -12,8 +12,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Vetalt\\ReferralBundle": ""
+            "Transmitter\\ReferralBundle": ""
         }
     },
-    "target-dir": "Vetalt/ReferralBundle"
+    "target-dir": "Transmitter/ReferralBundle"
 }

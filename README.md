@@ -1,4 +1,4 @@
-VetaltReferralBundle
+TransmitterReferralBundle
 ====================
 
 trial project
@@ -11,12 +11,12 @@ install
 ```js
 {
 "require": {
-    "vetalt/referral-bundle": "dev-master"
+    "transmitter/referral-bundle": "dev-master"
 },
 "repositories": [
     {
         "type": "git",
-        "url": "https://github.com/vetalt/referral-bundle"
+        "url": "https://github.com/transmitter/referral-bundle"
     }
 ],
 ```
@@ -30,7 +30,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new Vetalt\ReferralBundle\VetaltReferralBundle(),
+        new Transmitter\ReferralBundle\TransmitterReferralBundle(),
     );
 }
 ```
@@ -40,10 +40,10 @@ public function registerBundles()
 # app/config/config.yml
 fos_user:
     ...
-    user_class: Vetalt\ReferralBundle\Entity\User
+    user_class: Transmitter\ReferralBundle\Entity\User
     registration:
         form:
-            type: vetalt_referral_registration
+            type: transmitter_referral_registration
         confirmation:
             enabled: true
 ```
@@ -56,6 +56,6 @@ $ php app/console doctrine:schema:update --force
 6) import routing file
 ``` yaml
 # app/config/routing.yml
-_vetalt_referral:
-    resource: "@VetaltReferralBundle/Resources/config/routing.yml"
+_transmitter_referral:
+    resource: "@TransmitterReferralBundle/Resources/config/routing.yml"
 ```
