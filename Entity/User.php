@@ -1,6 +1,6 @@
 <?php
 
-namespace Transmitter\ReferralBundle\Entity;
+namespace Vetalt\ReferralBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;

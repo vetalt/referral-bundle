@@ -1,6 +1,6 @@
 <?php
 
-namespace Transmitter\ReferralBundle\Form\Type;
+namespace Vetalt\ReferralBundle\Form\Type;
 
 use Symfony\Component\Form\FormBuilderInterface;
 use FOS\UserBundle\Form\Type\RegistrationFormType as BaseType;
@@ -15,7 +15,7 @@ class RegistrationFormType extends BaseType {
     }
 
     public function getName() {
-        return 'transmitter_referral_registration';
+        return 'vetalt_referral_registration';
     }
 
 }

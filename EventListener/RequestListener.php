@@ -1,12 +1,12 @@
 <?php
 
-namespace Transmitter\ReferralBundle\EventListener;
+namespace Vetalt\ReferralBundle\EventListener;
 
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\HttpKernel;
 use Symfony\Component\HttpFoundation\Cookie;
 use Symfony\Component\HttpFoundation\RedirectResponse;
-use Transmitter\ReferralBundle\Entity\Reference;
+use Vetalt\ReferralBundle\Entity\Reference;
 use Doctrine\ORM\EntityManager;
 use Symfony\Bundle\FrameworkBundle\Routing\Router;
 use Symfony\Component\DependencyInjection\Container;
@@ -28,9 +28,9 @@ class RequestListener {
             return;
         }
 
-        $get_param_name = $this->container->getParameter('transmitter_referral.get_param_name');
-        $cookie_name = $this->container->getParameter('transmitter_referral.cookie_name');
-        $cookie_time = $this->container->getParameter('transmitter_referral.cookie_time');
+        $get_param_name = $this->container->getParameter('vetalt_referral.get_param_name');
+        $cookie_name = $this->container->getParameter('vetalt_referral.cookie_name');
+        $cookie_time = $this->container->getParameter('vetalt_referral.cookie_time');
 
         $request = $event->getRequest();
 

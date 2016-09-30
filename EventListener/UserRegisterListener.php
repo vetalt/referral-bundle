@@ -1,6 +1,6 @@
 <?php
 
-namespace Transmitter\ReferralBundle\EventListener;
+namespace Vetalt\ReferralBundle\EventListener;
 
 use FOS\UserBundle\FOSUserEvents;
 use FOS\UserBundle\Event\UserEvent;
@@ -23,7 +23,7 @@ class UserRegisterListener implements EventSubscriberInterface {
 
     public function onRegistrationSuccess(UserEvent $event) {
         $request = $event->getRequest();
-        $cookie_name = $this->container->getParameter('transmitter_referral.cookie_name');
+        $cookie_name = $this->container->getParameter('vetalt_referral.cookie_name');
         if ($request->cookies->has($cookie_name)) {
             $user = $event->getUser();
             $user->setReferenceId($request->cookies->get($cookie_name));
